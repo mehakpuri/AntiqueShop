@@ -1,0 +1,268 @@
+<!Doctype html>
+<html>
+        <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative|Vidaloka" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <style>
+        h1{
+             text-align: center;
+             font-size:40px;
+            color:#695049;
+            font-family: 'Cinzel Decorative', cursive;
+            }
+        .signup{
+                border: 1px solid gray;
+                 border-radius: 10px;
+            }
+         .button{
+                width:280px;
+                height:35px;
+                background-color:#695049;
+                border-radius:5px;
+                color:white;
+             font-family:'vidaloka',serif;
+
+            }
+        h3{
+                font-size:15px;
+                text-align: left;
+                color: black;
+            font-family:'vidaloka',serif;
+            }
+         h2{
+                text-align:left;
+                font-size:30px;
+                color:black;
+                font-family:'vidaloka',serif;
+            }
+        #h01{
+            size="20";
+            width:180px;
+            color:solid grey;
+
+        }
+        .signs{
+            color:blue;
+        }
+        .text{
+            border-radius:5px;
+        }
+        .img{
+            width:28px;
+            height:28px;
+        }
+         .footer-container{
+    background: #f1eee9;
+    position: relative;
+    padding: 5% 7%;
+  }
+  .footer-container #footer{
+    color: #777777;
+  }
+  .footer-container #footer h2{
+    font-size: 35px;
+    text-align: top;
+    font-family: "Vidaloka", serif;
+    color: #695049;
+    margin-bottom: 20%;
+    text-align: left;
+  }
+  .footer-container #footer h4{
+    font-size: 25px;
+    font-family: "Vidaloka", serif;
+    color: #695049;
+    margin-bottom: 20%;
+    text-align: left;
+  }
+  .footer-container #footer a:link, a:visited{
+    text-decoration: none;
+     color: #8b7871;
+     font-size: 16px;
+     font-family: "Vidaloka", serif;
+     line-height: 2;
+  }
+  .footer-container #footer a:hover {
+    color: #a54c4f;
+}
+.input{
+    height: 40px;
+    line-height: 30px;
+    font-size: 12px;
+    background: white;
+    border: none;
+    border-radius: 6px;
+    color: #8b7871;
+    padding: 1% 4%;
+}
+.f1 {
+  padding: 20px;
+  width: 35px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 60%;
+  display: inline-block;
+  transition: 0.3s;
+
+}
+.f1:hover {
+    opacity: 0.7;
+    color: #a54c4f;
+ transform: rotateZ(360deg);
+}
+.fa-arrow-right i:hover{
+  color: #a54c4f;
+}
+.fa-twitter {
+  background: white;
+  color: gray;
+
+}
+.fa-facebook {
+  background: white;
+  color: gray;
+}
+.fa-google-plus {
+  background: white;
+  color: gray;
+}
+.fa-pinterest {
+  background: white;
+  color: gray;
+}
+
+    </style>
+    <body>
+      <header class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12 nav">
+          <div class="col-md-8 col-sm-4 col-xs-4">
+              <img class="img-responsive logo" src="nayab.png" alt="Nayab Logo">
+          </div>
+          <div class="col-md-4 col-sm-12 col-xs-12 tags">
+          <nav>
+              <b>
+              <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+                  <a href="signin.html">Sign In</a></b>
+          </nav>
+          </div>
+        </div>
+      </header>
+      <br><br><br><br>
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <h1><b>Nayab</b></h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-0 col-xs-0">
+            </div>
+            <div class="col-md-4 col-sm-0 col-xs-0 signup">
+                <form>
+                <h2><b>Create Account</b>&nbsp;<img src="signup.png" alt="signs" class="img"></h2>
+                <h3><b>Your name</b></h3>
+                <input type="name" size="25" name="name" class="text" id="name" pattern="[A-Za-z]{3,}" required>
+                    <h3><b>Email Id</b></h3>
+                <input type="email" size="25" name="mail" class="text" id="email" pattern="[a-z0-9*#]+@[a-z]{5,10}+.[a-z]{2,3}" required>
+                    <h3><b>Password</b></h3>
+                    <input type="password" size="25" name="pass" class="text" id="password" pattern="[A-Za-z0-9]{8,}" title="Password must be atleast 8 letters" required> <br>
+                    <h3><b>Re-enter Password</b></h3>
+                    <input type="password" size="25" name="pass" class="text" id="password2" pattern="[A-Za-z]{8,}" title="Password must be atleast 8 letters" required> <br><br>
+                    <center> <input type="submit" value="Create your Nayab Account" class="button" onclick="check()" ></center>
+                    <hr id="h01">
+                    <h3>Already have an account?<a href="signin.html" class="signs">Sign in</a></h3>
+                </form>
+            </div>
+            <div class="col-md-4 col-sm-0 col-xs-0">
+            </div>
+
+        </div>
+        <br>
+        <br>
+        <script>
+        function check()
+        {
+          var a=document.getElementById('name');
+          var b=document.getElementById("email");
+          var c=document.getElementById("password");
+          var d=document.getElementById("password2");
+          /*if(!a.checkValidity())
+          {
+            alert("Name can't be empty");
+          }
+          else if(!b.checkValidity())
+          {
+            alert("Email can't be empty");
+          }
+          else if(!c.checkValidity())
+          {
+            alert("Password not right");
+          }*/
+          if(d.value!=c.value)
+          {
+            alert("password doesn't match");
+          }
+          else if(a.checkValidity()&&b.checkValidity()&&c.checkValidity())
+          {
+          //alert("You have been logged in. Come, explore, shop with us!");
+          opennew();
+        }
+        function opennew()
+        {
+          var myWindow = window.open("index.html");
+         myWindow.alert("Welcome to Nayab!");
+        }
+      }
+        </script>
+         <div class="footer-container">
+        <footer id="footer">
+          <div class="row">
+            <div class="col-xs-12 col-sm-3 col-md-2 col-lg-3">
+              <h4 style="font-size:36px;font-family: 'Cinzel Decorative', cursive;"><b>Nayab</b></h4>
+              <ul>
+
+              </ul>
+            </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-3 col-md-2 col-lg-3">
+              <h4>Information</h4>
+              <nav>
+                <a href="index.html">Categories</a><br>
+                <a href="about.html">About Us</a><br>
+                <a href="gallery.html">Art Gallery</a><br>
+                <a href="index.html">Home</a><br>
+            </nav>
+            </div>
+            <div class="container">
+              <div class="col-xs-12 col-sm-3 col-md-2 col-lg-3">
+                <h4>Follow Us</h4>
+               <a href="https://twitter.com/login?lang=en" > <i class="fa fa-twitter f1" style="width: 35px;height: 35px;"></i></a>
+         <a href="https://www.facebook.com/"><i class="fa fa-facebook f1" style="width: 35px;height: 35px;"></i></a>
+       <a href="https://plus.google.com/people">  <i class="fa fa-google-plus f1" style="width: 35px;height: 35px;"></i></a>
+         <a href="https://in.pinterest.com/"> <i class="fa fa-pinterest f1" style="width: 35px;height: 35px;"></i></a>
+              </div>
+              <div class="row">
+                <div class="col-xs-12 col-sm-3 col-md-2 col-lg-3">
+                  <h4>Newsletter Sign Up</h4>
+                  <form>
+                    <input class="input" type="text" name="email" size="18" value="Enter your email">
+                    <button class="input" type="submit" name="submitNewsletter">
+                      <span><i class="fa fa-arrow-right"></i></span>
+                    </button>
+                  </form>
+                </div>
+              </div>
+             </div>
+           </div>
+         </div>
+           </footer>
+        </div>
+    </body>
+</html>

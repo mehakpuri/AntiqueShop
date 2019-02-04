@@ -1,0 +1,96 @@
+h1{
+  font-family: 'Cinzel Decorative', cursive;
+  text-align: center;
+  font-size: 50px;
+}
+body{
+  background-image: url("theme1.jpg");
+  background-size:cover;
+}
+.logo{
+  padding-left: 10px;
+  height: 11%;
+  width: 11%;
+}
+.content{
+  font-size: 17px;
+}
+.footer-container{
+  background: #f1eee9;
+  position: relative;
+  padding: 5% 7%;
+}
+.footer-container #footer{
+  color: #777777;
+}
+.footer-container #footer h2{
+  font-size: 35px;
+  text-align: top;
+  font-family: "Vidaloka", serif;
+  color: #695049;
+  margin-bottom: 20%;
+  text-align: left;
+}
+.footer-container #footer h4{
+  font-size: 25px;
+  font-family: "Vidaloka", serif;
+  color: #695049;
+  margin-bottom: 20%;
+  text-align: left;
+}
+.footer-container #footer a:link, a:visited{
+  text-decoration: none;
+   color: #8b7871;
+   font-size: 16px;
+   font-family: "Vidaloka", serif;
+   line-height: 2;
+}
+.footer-container #footer a:hover {
+  color: #a54c4f;
+}
+.input{
+  height: 40px;
+  line-height: 30px;
+  font-size: 12px;
+  background: white;
+  border: none;
+  border-radius: 6px;
+  color: #8b7871;
+  padding: 1% 4%;
+}
+.f1 {
+padding: 20px;
+width: 35px;
+text-align: center;
+text-decoration: none;
+margin: 5px 2px;
+border-radius: 60%;
+display: inline-block;
+transition: 0.3s;
+
+}
+.f1:hover {
+  opacity: 0.7;
+  color: #a54c4f;
+transform: rotateZ(360deg);
+}
+.fa-arrow-right i:hover{
+color: #a54c4f;
+}
+.fa-twitter {
+background: white;
+color: gray;
+
+}
+.fa-facebook {
+background: white;
+color: gray;
+}
+.fa-google-plus {
+background: white;
+color: gray;
+}
+.fa-pinterest {
+background: white;
+color: gray;
+}

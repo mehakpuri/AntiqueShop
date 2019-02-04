@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative|Fanwood+Text|Roboto+Condensed|Vidaloka|Adamina" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body onload="changeimage(1); changeimage1(1);changeimage2(2);">
+  <div class="main">
+    <header class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12 nav">
+        <div class="col-md-8 col-sm-4 col-xs-4">
+            <img class="img-responsive logo" src="nayab.png" alt="Nayab Logo">
+        </div>
+        <div class="col-md-4 col-sm-8 col-xs-8 tags">
+        <nav>
+        <ul>
+          <a href="#">Home</a>
+          <a href="about.html">About</a>
+          <a href="#">Gallery</a>
+          <a href="#">Sign In</a>
+        </ul>
+        </nav>
+        </div>
+      </div>
+    </header>
+    <div class="picture" id="categ">
+      <img src="ANT.jpg" alt="antiquity" class="col-md-12 col-sm-12 col-xs-12 cover">
+      <h1 class="centre">Nayab</h1>
+    </div>
+  </div>
+   <div class="col-md-12 col-sm-12 col-xs-12 top_navigation">
+     <div class="col-md-2col-sm-2 col-xs-2">
+     </div>
+
+     <div class="col-md-10 col-sm-10 col-xs-10 display">
+        <nav>
+         <ul class="navigation">
+          <a href="art.html">ART</a>
+          <a href="clock.html">CLOCKS</a>
+          <a href="coins.html">COINS</a>
+          <a href="furniture.html">FURNITURE</a>
+          <a href="ornaments.html">ORNAMENTS</a>
+          <a href="sculptures.html">SCULPTURES</a>
+        </ul>
+      </nav>
+    </div>
+    <div class="col-md-2 col-sm-2 col-xs-2">
+    </div>
+  </div>
+  <div class="col-md-12 col-sm-12 col-xs-12 content">
+      <p id="p01"><stong>WELCOME TO OUR STORE</strong></p>
+    </div>
+    <div class="block" >
+      <div class="row image">
+        <div class="col-md-4 col-sm-12">
+          <img class="img-responsive i01" id="myimage" src="ornaments.jpg" alt="ornaments" >
+          <h2 class="text"><b>ANTIQUE</b></h2>
+          <h2 class="text1"><b>ORNAMENTS</b></h2>
+          <p class="text-center text2"><a href="#">read more</a></p>
+          <script>
+          var imageID=1;
+          function changeimage(every_seconds)
+          {
+           if(!imageID)
+             {
+               document.getElementById("myimage").src="ornaments.jpg";
+               imageID++;
+              }
+           else
+             {
+               if(imageID==1)
+               {
+               document.getElementById("myimage").src="ornaments1.jpg";
+               imageID++;
+               }
+           else
+            {
+               if(imageID==2)
+               {
+               document.getElementById("myimage").src="ornaments2.jpg";
+               imageID=0;
+             }
+           }
+          }
+           setTimeout("changeimage("+every_seconds+")",((every_seconds)*2000));
+          }
+          </script>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <img class="img-responsive i01" id="myimage1" src="furniture.jpg" >
+          <h2 class="text"><b>ANTIQUE</b></h2>
+          <h2 class="text1"><b>FURNITURE</b></h2>
+          <p class="text-center text2"><a href="#">read more</a></p>
+          <script>
+          var imageID=1;
+          function changeimage1(every_seconds)
+          {
+           if(!imageID)
+             {
+               document.getElementById("myimage1").src="furniture.jpg";
+               imageID++;
+              }
+           else
+             {
+               if(imageID==1)
+               {
+               document.getElementById("myimage1").src="furniture1.jpg";
+               imageID++;
+               }
+           else
+            {
+               if(imageID==2)
+               {
+               document.getElementById("myimage1").src="furniture2.jpg";
+               imageID=0;
+             }
+           }
+          }
+           setTimeout("changeimage1("+every_seconds+")",((every_seconds)*2000));
+          }
+          </script>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <img class="img-responsive i01" id="myimage2" src="clock.jpg" >
+
+          <h2 class="text"><b>ANTIQUE</b></h2>
+          <h2 class="text1"><b>CLOCKS</b></h2>
+          <p class="text-center text2"><a href="#">read more</a></p>
+          <script>
+          var imageID=1;
+          function changeimage2(every_seconds)
+          {
+           if(!imageID)
+             {
+               document.getElementById("myimage2").src="clock.jpg";
+               imageID++;
+              }
+           else
+             {
+               if(imageID==1)
+               {
+               document.getElementById("myimage2").src="clock1.jpg";
+               imageID++;
+               }
+           else
+            {
+               if(imageID==2)
+               {
+               document.getElementById("myimage2").src="clock2.jpg";
+               imageID=0;
+             }
+           }
+          }
+           setTimeout("changeimage2("+every_seconds+")",((every_seconds)*2000));
+          }
+          </script>
+        </div>
+      </div>
+    </div>
+      <div class="col-md-12 col-sm-12 col-xs-12 content">
+          <p id="p02"><stong>BEST SELLERS</strong></p>
+      </div>
+      <div class="row block1">
+        <div class="categories">
+          <div class="row">
+            <div class="col-md-4 col-sm-12 col-xs-12 pic">
+              <img src="bestart.jpg" onmouseover="sec_image1(this)" onmouseout="first_image1(this)" alt="art">
+              <p>Descriptionnn nkj nknknkn nnkjlkk bh</p>
+              <script>
+               function sec_image1(x) {
+                 x.src = "bestart1.jpg";}
+               function first_image1(x) {
+                 x.src = "bestart.jpg";}
+              </script>
+              <table>
+                <tr>
+                  <td style="font-size:20px;">
+                     Rs 1000/-
+                  </td>
+                   <td style="text-align:center;font-size:20px;">
+                      <button type="button" style="margin-left:60px;"> Buy</button>
+                   </td>
+                </tr>
+              </table>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12 pic">
+              <img src="bestclock.jpg" onmouseover="sec_image2(this)" onmouseout="first_image2(this)" alt="clock">
+              <p>Descriptionnn nkj nknknkn nnkjlkk bh</p>
+              <script>
+               function sec_image2(x) {
+                 x.src = "bestclock1.jpg";}
+               function first_image2(x) {
+                 x.src = "bestclock.jpg";}
+              </script>
+              <table>
+                <tr>
+                  <td style="font-size:20px;">
+                     Rs 1000/-
+                  </td>
+                  <td style="text-align:center;font-size:20px;">
+                     <button type="button" style="margin-left:60px;"> Buy</button>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12 pic">
+              <img src="bestcoin.jpg" onmouseover="sec_image3(this)" onmouseout="first_image3(this)" alt="coin">
+              <p>Descriptionnn nkj nknknkn nnkjlkk bh</p>
+              <script>
+               function sec_image3(x) {
+                 x.src = "bestcoin1.jpg";}
+               function first_image3(x) {
+                 x.src = "bestcoin.jpg";}
+              </script>
+              <table>
+                <tr>
+                  <td style="font-size:20px;">
+                     Rs 1000/-
+                  </td>
+                  <td style="text-align:center;font-size:20px;">
+                     <button type="button" style="margin-left:60px;"> Buy</button>
+                  </td>
+                </tr>
+             </table>
+            </div>
+          </div>
+          <br><br><br><br><br><br>
+            <div class="col-md-4 col-sm-12 col-xs-12 pic">
+              <img src="bestfurniture.jpg" onmouseover="sec_image4(this)" onmouseout="first_image4(this)" alt="furniture">
+              <p>Descriptionnn nkj nknknkn nnkjlkk bh</p>
+              <script>
+               function sec_image4(x) {
+                 x.src = "bestfurniture1.jpg";}
+               function first_image4(x) {
+                 x.src = "bestfurniture.jpg";}
+              </script>
+              <table>
+                <tr>
+                  <td style="font-size:20px;">
+                     Rs 1000/-
+                   </td>
+                  <td style="text-align:center;font-size:20px;">
+                     <button type="button" style="margin-left:60px;"> Buy</button>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12 pic">
+              <img src="bestornaments.jpg" onmouseover="sec_image5(this)" onmouseout="first_image5(this)" alt="ornaments">
+              <p>Descriptionnn nkj nknknkn nnkjlkk bh</p>
+              <script>
+               function sec_image5(x) {
+                 x.src = "bestornaments1.jpg";}
+               function first_image5(x) {
+                 x.src = "bestornaments.jpg";}
+              </script>
+              <table>
+                <tr>
+                  <td style="font-size:20px;">
+                     Rs 1000/-
+                  </td>
+                  <td style="text-align:center;font-size:20px;">
+                     <button type="button" style="margin-left:60px;"> Buy</button>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12 pic">
+              <img src="bestsculpture.jpg" onmouseover="sec_image6(this)" onmouseout="first_image6(this)" alt="sculptures">
+              <p>Descriptionnn nkj nknknkn nnkjlkk bh</p>
+              <script>
+               function sec_image6(x) {
+                 x.src = "bestsculpture1.jpg";}
+               function first_image6(x) {
+                 x.src = "bestsculpture.jpg";}
+              </script>
+              <table>
+                <tr>
+                  <td style="font-size:20px;">
+                     Rs 1000/-
+                  </td>
+                  <td style="text-align:center;font-size:20px;">
+                     <button type="button" style="margin-left:60px;"> Buy</button>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            </div>
+          </div>
+          <div class="row block2">
+           <div class="picture2" id="categ">
+             <img src="main.jpg" alt="antiquity" class="col-md-12 col-sm-12 col-xs-12 cover">
+             <h1 class="centre2">The World's Best<br> Antiques</h1>
+           </div>
+          </div>
+       <div class="footer-container">
+        <footer id="footer">
+          <div class="row">
+            <div class="col-xs-12 col-sm-3 col-md-2 col-lg-3">
+              <h4 style="font-size:36px;font-family: 'Cinzel Decorative', cursive;"><b>Nayab</b></h4>
+              <ul>
+
+              </ul>
+            </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-3 col-md-2 col-lg-3">
+              <h4>Information</h4>
+              <nav>
+                <a href="#categ">Categories</a><br>
+                <a href="#">About Us</a><br>
+                <a href="#">Art Gallery</a><br>
+                <a href="#">Home</a><br>
+            </nav>
+            </div>
+            <div class="container">
+              <div class="col-xs-12 col-sm-3 col-md-2 col-lg-3">
+                <h4>Follow Us</h4>
+                <i class="fa fa-twitter f1" style="width: 35px;height: 35px;"></i>
+                <a href="#"><i class="fa fa-facebook f1" style="width: 35px;height: 35px;"></i></a>
+                <i class="fa fa-google-plus f1" style="width: 35px;height: 35px;"></i>
+                <i class="fa fa-pinterest f1" style="width: 35px;height: 35px;"></i>
+              </div>
+              <div class="row">
+                <div class="col-xs-12 col-sm-3 col-md-2 col-lg-3">
+                  <h4>Newsletter Sign Up</h4>
+                  <form>
+                    <input class="input" type="text" name="email" size="18" value="Enter your email">
+                    <button class="input" type="submit" name="submitNewsletter">
+                      <span><i class="fa fa-arrow-right"></i></span>
+                    </button>
+                  </form>
+                </div>
+              </div>
+             </div>
+           </div>
+         </div>
+        </div>
+</body>
+</html>
